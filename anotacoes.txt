@@ -1,5 +1,3 @@
-Última aula feita: 11
-
 Configurar o composer:
 composer init
 
