@@ -38,3 +38,5 @@ vendor/bin/phpunit
 Todas as classes de teste devem terminar com 'Test'
 Todas as funções de testes devem iniciar com 'test'
 
+Instalando o DBUnit para testes em bancos de dados:
+composer require --dev phpunit/dbunit

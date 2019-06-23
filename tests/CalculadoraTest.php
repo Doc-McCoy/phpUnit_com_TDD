@@ -70,4 +70,13 @@ class CalculadoraTest extends TestCase
         $calc = new Calculadora(2, 2, 'batata');
         $this->assertEquals('Operador inválido!', $calc->getResultado(), 'Erro no método getResultado quando é passado operador inválido.');
     }
+
+    /**
+     * @depends testGetResultadoCalculadora
+     */
+    public function testStaticCalculadora()
+    {
+        $resultado = Calculadora::calcular(2, 4, 'soma');
+        $this->assertEquals(6, $resultado, 'Erro no método estático calcular.');
+    }
 }

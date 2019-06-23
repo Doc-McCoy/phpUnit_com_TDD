@@ -53,6 +53,11 @@ class Calculadora
             default:
                 return 'Operador inválido!';
         }
-        
+    }
+
+    public static function calcular($valorA, $valorB, $operador)
+    {
+        $calc = new Calculadora($valorA, $valorB, $operador);
+        return $calc->getResultado();
     }
 }
